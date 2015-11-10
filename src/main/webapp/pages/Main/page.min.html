@@ -28,10 +28,11 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
 var _MainPage_Variables_ ={}
 </script>
 <script id="Main.html" type="text/ng-template">
-<wm-page data-ng-controller="MainPageController"> 
-    <wm-content> 
-        <wm-page-content columnwidth="12"> 
-        </wm-page-content> 
-    </wm-content> 
+<wm-page data-ng-controller="MainPageController" name="page1">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-button class="btn-default" caption="Button" type="button" name="button1"></wm-button>
+        </wm-page-content>
+    </wm-content>
 </wm-page>
 </script>
